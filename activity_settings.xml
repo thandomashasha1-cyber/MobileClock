@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clock_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- BACK BUTTON -->
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textColor="@color/clock_text_primary"
+            android:backgroundTint="@color/clock_button" />
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="SETTINGS"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Customize Mobile Clock"
+            android:textColor="@color/clock_text_secondary"
+            android:textSize="14sp" />
+
+        <!-- ================================================= -->
+        <!-- TIME FORMAT -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="TIME FORMAT"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/timeFormatGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/twelveHourRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12-hour format"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/twentyFourHourRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24-hour format"
+                android:textColor="@color/clock_text_primary" />
+
+        </RadioGroup>
+
+        <!-- DIVIDER -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/clock_divider" />
+
+        <!-- ================================================= -->
+        <!-- APPEARANCE -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="APPEARANCE"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/themeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/darkThemeRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dark theme"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/lightThemeRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light theme"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/systemThemeRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use system theme"
+                android:textColor="@color/clock_text_primary" />
+
+        </RadioGroup>
+
+        <!-- DIVIDER -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/clock_divider" />
+
+        <!-- ================================================= -->
+        <!-- ALARM SETTINGS -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ALARM"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- VIBRATION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Vibration"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/vibrationSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vibrate when alarm rings"
+            android:textColor="@color/clock_text_primary" />
+
+        <!-- ================================================= -->
+        <!-- SNOOZE -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="SNOOZE DURATION"
+            android:textColor="@color/clock_text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/snoozeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/snooze1Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 minute"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/snooze5Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 minutes"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/snooze10Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 minutes"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/snooze15Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 minutes"
+                android:textColor="@color/clock_text_primary" />
+
+            <RadioButton
+                android:id="@+id/snooze30Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 minutes"
+                android:textColor="@color/clock_text_primary" />
+
+        </RadioGroup>
+
+        <!-- DIVIDER -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/clock_divider" />
+
+        <!-- ================================================= -->
+        <!-- ABOUT -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ABOUT"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Mobile Clock"
+            android:textColor="@color/clock_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="Version 1.0"
+            android:textColor="@color/clock_text_secondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

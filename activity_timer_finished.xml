@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/clock_background">
+
+    <TextView
+        android:id="@+id/timerFinishedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMER FINISHED"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/clock_text_primary"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your countdown has finished."
+        android:textSize="18sp"
+        android:textColor="@color/clock_text_secondary"
+        android:gravity="center"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/stopTimerButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="STOP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/clock_text_primary"
+        android:backgroundTint="@color/clock_button" />
+
+</LinearLayout>

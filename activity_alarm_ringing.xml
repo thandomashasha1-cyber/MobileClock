@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="@color/clock_background">
+
+    <!-- ALARM TIME -->
+
+    <TextView
+        android:id="@+id/alarmTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="07:00"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="@color/clock_text_primary" />
+
+    <!-- ALARM LABEL -->
+
+    <TextView
+        android:id="@+id/alarmLabelText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Alarm"
+        android:textSize="26sp"
+        android:textColor="@color/clock_text_secondary" />
+
+    <!-- SNOOZE -->
+
+    <Button
+        android:id="@+id/snoozeButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:text="SNOOZE 5 MINUTES"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/clock_text_primary"
+        android:backgroundTint="@color/clock_button" />
+
+    <!-- STOP -->
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="STOP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/clock_text_primary"
+        android:backgroundTint="@color/clock_button" />
+
+</LinearLayout>
